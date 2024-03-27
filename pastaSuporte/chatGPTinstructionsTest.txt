@@ -1,0 +1,87 @@
+Caracteristicas do ambiente para o sistema Maven home: C:\dev\apache-maven-3.8.8
+Java version: 17.0.10, vendor: Eclipse Adoptium, runtime: C:\Program Files\Eclipse Adoptium\jdk-17.0.10.7-hotspot
+Default locale: pt_BR, platform encoding: Cp1252
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
+
+Construir um programa java chamado whatsappSender com repositorios maven na qual
+leia um arquivo telefones.txt com a lista de numeros de telefone no formato 5516997212966 
+leia um arquivo mensagem.txt com a mensagem padrão mensagemPadraoJavaWesley
+registre todos os passos em detalhes em log no src registrado em um arquivo applogexec.txt
+
+Caracteristicas do programa
+Utilizar o browser edge
+Considere o driver do edge na pasta C:\dev\edgedriver\msedgedriver.exe
+Deve ter o formato de url https://api.whatsapp.com/send?phone=5516997212966&text=mensagemPadraoJavaWesley
+
+O programa deve abrir o browser, receber a url criada, aguardar o browser abrir, inserir a url, aguardar o tempo de carregamento da pagina e ao aparecer "iniciar conversa" clicar no botão para que a interação com o whatsapp comece.
+
+O pom.xml que deve ser considerado
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.example</groupId>
+    <artifactId>whatsapp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    
+    <properties>
+      <maven.compiler.source>17</maven.compiler.source>
+      <maven.compiler.target>17</maven.compiler.target>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+      <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+            <configuration>
+                <encoding>UTF-8</encoding>
+            </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.2.0</version>
+          <configuration>
+              <encoding>UTF-8</encoding>
+          </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+            <mainClass>com.example.whatsapp.App</mainClass>
+            <!-- Substitua "com.example.whatsapp.App" pelo caminho da sua classe principal -->
+        </configuration>
+    </plugin>
+    </plugins>
+  </build>
+
+    <dependencies>
+        <!-- Selenium WebDriver para Java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+        
+        <!-- Log4j 2 para logging -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+
+
+    <!--Selenium-->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.1.1</version>
+  </dependency>
+</dependencies>
+</project>

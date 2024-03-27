@@ -1,36 +1,98 @@
 [INFO] Scanning for projects...
 [INFO] 
-[INFO] ----------------< com.example.whatsapp:whatsapp-api_v2 >----------------
-[INFO] Building whatsapp-api_v2 1.0-SNAPSHOT
+[INFO] ---------------------< com.example:whatsappSender >---------------------
+[INFO] Building whatsappSender 1.0-SNAPSHOT
 [INFO]   from pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ whatsapp-api_v2 ---
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ whatsappSender ---
 [INFO] Deleting C:\projetoswesley\whatsapp-api_v2\target
 [INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ whatsapp-api_v2 ---
-[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ whatsappSender ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 1 resource
 [INFO] 
-[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ whatsapp-api_v2 ---
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ whatsappSender ---
 [INFO] Changes detected - recompiling the module!
-[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
 [INFO] Compiling 1 source file to C:\projetoswesley\whatsapp-api_v2\target\classes
+[INFO] /C:/projetoswesley/whatsapp-api_v2/src/main/java/com/example/whatsapp/App.java: C:\projetoswesley\whatsapp-api_v2\src\main\java\com\example\whatsapp\App.java uses or overrides a deprecated API.
+[INFO] /C:/projetoswesley/whatsapp-api_v2/src/main/java/com/example/whatsapp/App.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
-[INFO] --- exec-maven-plugin:3.2.0:java (default-cli) @ whatsapp-api_v2 ---
-12:36:43.206 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Iniciando o programa.
-12:36:43.215 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: numeros.txt
-12:36:43.215 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: mensagem.txt
-12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516997212966: TesteMensagemWesleyJava
-12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516997212966&text=TesteMensagemWesleyJava
-12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516997828835: TesteMensagemWesleyJava
-12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516997828835&text=TesteMensagemWesleyJava
-12:36:43.217 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516991101371: TesteMensagemWesleyJava
-12:36:43.217 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516991101371&text=TesteMensagemWesleyJava
-12:36:43.217 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Programa concluído.
+[INFO] --- exec-maven-plugin:3.2.0:java (default-cli) @ whatsappSender ---
+18:46:36.187 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Iniciando o programa.
+18:46:36.193 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: telefones.txt
+18:46:36.193 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: mensagem.txt
+[WARNING] 
+org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57895/devtools/browser/ea7316fb-fc2e-4184-9874-d5b0c1d1113a
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'wes-dell', ip: '192.168.15.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: driver.version: EdgeDriver
+    at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init> (NettyWebSocket.java:104)
+    at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3 (NettyWebSocket.java:137)
+    at org.openqa.selenium.remote.http.netty.NettyClient.openSocket (NettyClient.java:118)
+    at org.openqa.selenium.devtools.Connection.<init> (Connection.java:77)
+    at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2 (ChromiumDriver.java:124)
+    at java.util.Optional.map (Optional.java:260)
+    at org.openqa.selenium.chromium.ChromiumDriver.<init> (ChromiumDriver.java:122)
+    at org.openqa.selenium.edge.EdgeDriver.<init> (EdgeDriver.java:49)
+    at org.openqa.selenium.edge.EdgeDriver.<init> (EdgeDriver.java:41)
+    at org.openqa.selenium.edge.EdgeDriver.<init> (EdgeDriver.java:38)
+    at com.example.whatsapp.App.main (App.java:29)
+    at org.codehaus.mojo.exec.ExecJavaMojo.doMain (ExecJavaMojo.java:385)
+    at org.codehaus.mojo.exec.ExecJavaMojo.doExec (ExecJavaMojo.java:374)
+    at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0 (ExecJavaMojo.java:296)
+    at java.lang.Thread.run (Thread.java:840)
+[WARNING] thread Thread[AsyncHttpClient-1-1,5,com.example.whatsapp.App] was interrupted but is still alive after waiting at least 15000msecs
+[WARNING] thread Thread[AsyncHttpClient-1-1,5,com.example.whatsapp.App] will linger despite being asked to die via interruption
+[WARNING] thread Thread[Driver Service Executor,5,com.example.whatsapp.App] will linger despite being asked to die via interruption
+[WARNING] thread Thread[Driver Service Executor,5,com.example.whatsapp.App] will linger despite being asked to die via interruption
+[WARNING] thread Thread[UrlChecker-2,5,com.example.whatsapp.App] will linger despite being asked to die via interruption
+[WARNING] thread Thread[AsyncHttpClient-1-2,5,com.example.whatsapp.App] will linger despite being asked to die via interruption
+[WARNING] thread Thread[AsyncHttpClient-1-3,5,com.example.whatsapp.App] will linger despite being asked to die via interruption
+[WARNING] thread Thread[AsyncHttpClient-1-4,5,com.example.whatsapp.App] will linger despite being asked to die via interruption
+[WARNING] NOTE: 7 thread(s) did not finish despite being asked to via interruption. This is not a problem with exec:java, it is a problem with the running code. Although not serious, it should be remedied.
+[WARNING] Couldn't destroy threadgroup org.codehaus.mojo.exec.ExecJavaMojo$IsolatedThreadGroup[name=com.example.whatsapp.App,maxpri=10]
+java.lang.IllegalThreadStateException
+    at java.lang.ThreadGroup.destroy (ThreadGroup.java:803)
+    at org.codehaus.mojo.exec.ExecJavaMojo.execute (ExecJavaMojo.java:340)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:370)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:351)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:215)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:171)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:163)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:299)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:193)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:106)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:963)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:296)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:199)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:568)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
+[INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.018 s
-[INFO] Finished at: 2024-03-27T12:36:43-03:00
+[INFO] Total time:  21.135 s
+[INFO] Finished at: 2024-03-27T18:46:54-03:00
 [INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.2.0:java (default-cli) on project whatsappSender: An exception occurred while executing the Java class. Unable to establish websocket connection to http://localhost:57895/devtools/browser/ea7316fb-fc2e-4184-9874-d5b0c1d1113a
+[ERROR] Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+[ERROR] System info: host: 'wes-dell', ip: '192.168.15.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+[ERROR] Driver info: driver.version: EdgeDriver
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
