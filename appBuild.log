@@ -1,0 +1,36 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.example.whatsapp:whatsapp-api_v2 >----------------
+[INFO] Building whatsapp-api_v2 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ whatsapp-api_v2 ---
+[INFO] Deleting C:\projetoswesley\whatsapp-api_v2\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ whatsapp-api_v2 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ whatsapp-api_v2 ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to C:\projetoswesley\whatsapp-api_v2\target\classes
+[INFO] 
+[INFO] --- exec-maven-plugin:3.2.0:java (default-cli) @ whatsapp-api_v2 ---
+12:36:43.206 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Iniciando o programa.
+12:36:43.215 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: numeros.txt
+12:36:43.215 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: mensagem.txt
+12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516997212966: TesteMensagemWesleyJava
+12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516997212966&text=TesteMensagemWesleyJava
+12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516997828835: TesteMensagemWesleyJava
+12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516997828835&text=TesteMensagemWesleyJava
+12:36:43.217 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516991101371: TesteMensagemWesleyJava
+12:36:43.217 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516991101371&text=TesteMensagemWesleyJava
+12:36:43.217 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Programa concluído.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.018 s
+[INFO] Finished at: 2024-03-27T12:36:43-03:00
+[INFO] ------------------------------------------------------------------------

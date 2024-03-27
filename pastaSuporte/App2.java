@@ -2,9 +2,9 @@ package com.example.whatsapp;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-//import org.openqa.selenium.By;
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -46,24 +46,10 @@ public class App {
 
         // Inicializar o driver do Chrome
         System.setProperty("webdriver.chrome.driver", "caminho/para/o/chromedriver.exe");
-        //WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         
         // Abrir o WhatsApp Web
-        //driver.get("https://web.whatsapp.com");
+        driver.get("https://web.whatsapp.com");
         
         // Aguardar até que o usuário faça login
-        // (Você pode implementar um mecanismo para esperar até que um elemento específico seja visível)
-        
-        // Abrir a conversa com o número de telefone especificado
-        //driver.get(url);
-        
-        // Aguardar até que a página seja carregada completamente
-        // (Você pode implementar um mecanismo para esperar até que um elemento específico seja visível)
-        
-        // Clicar no botão "Iniciar conversa"
-        //driver.findElement(By.cssSelector("[title^='Novo']")).click();
-        
-        // Fechar o navegador
-        //driver.quit();
-    }
-}
+        // (Você pode implementar um mecanismo para esperar até que um elemento específic

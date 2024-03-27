@@ -1,38 +1,10 @@
-20:30:51.288 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Iniciando o programa.
-20:30:51.303 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: numeros.txt
-20:30:51.303 [com.example.whatsapp.App.main()] ERROR com.example.whatsapp.App - Erro ao ler arquivos.
-java.nio.file.NoSuchFileException: numeros.txt
-	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
-	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236) ~[?:?]
-	at java.nio.file.Files.newByteChannel(Files.java:380) ~[?:?]
-	at java.nio.file.Files.newByteChannel(Files.java:432) ~[?:?]
-	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422) ~[?:?]
-	at java.nio.file.Files.newInputStream(Files.java:160) ~[?:?]
-	at java.nio.file.Files.newBufferedReader(Files.java:2922) ~[?:?]
-	at java.nio.file.Files.readAllLines(Files.java:3412) ~[?:?]
-	at java.nio.file.Files.readAllLines(Files.java:3453) ~[?:?]
-	at com.example.whatsapp.App.lerArquivo(App.java:35) ~[classes/:?]
-	at com.example.whatsapp.App.main(App.java:19) ~[classes/:?]
-	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385) ~[?:?]
-	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374) ~[?:?]
-	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296) ~[?:?]
-	at java.lang.Thread.run(Thread.java:840) [?:?]
-20:30:51.303 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Programa concluído.
-20:31:16.055 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Iniciando o programa.
-20:31:16.055 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: numeros.txt
-20:31:16.055 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: mensagem.txt
-20:31:16.055 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516997212966: TesteMensagemWesleyJava
-20:31:16.055 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516997212966&text=TesteMensagemWesleyJava
-20:31:16.055 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516997828835: TesteMensagemWesleyJava
-20:31:16.055 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516997828835&text=TesteMensagemWesleyJava
-20:31:16.055 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Programa concluído.
-21:03:32.679 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Iniciando o programa.
-21:03:32.716 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: numeros.txt
-21:03:32.717 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: mensagem.txt
-21:03:32.717 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516997212966: TesteMensagemWesleyJava
-21:03:32.718 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516997212966&text=TesteMensagemWesleyJava
-21:03:32.718 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516997828835: TesteMensagemWesleyJava
-21:03:32.718 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516997828835&text=TesteMensagemWesleyJava
-21:03:32.718 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Programa concluído.
+12:36:43.206 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Iniciando o programa.
+12:36:43.215 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: numeros.txt
+12:36:43.215 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Lendo arquivo: mensagem.txt
+12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516997212966: TesteMensagemWesleyJava
+12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516997212966&text=TesteMensagemWesleyJava
+12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516997828835: TesteMensagemWesleyJava
+12:36:43.216 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516997828835&text=TesteMensagemWesleyJava
+12:36:43.217 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Enviando mensagem para o telefone 5516991101371: TesteMensagemWesleyJava
+12:36:43.217 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - URL da API: https://api.whatsapp.com/send?phone=5516991101371&text=TesteMensagemWesleyJava
+12:36:43.217 [com.example.whatsapp.App.main()] INFO  com.example.whatsapp.App - Programa concluído.
